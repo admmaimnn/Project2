@@ -593,8 +593,8 @@ h2 {
         margin: 0 auto;
         top: -35px;
         width: 70%;
-        box-sizing: border-box;
         max-width: 100%;
+        box-sizing: border-box;
     }
     
 
@@ -610,8 +610,9 @@ h2 {
     
 
     .features-campaigns .card {
-        width: 100%;
-        max-width: 400px; /* ✅ this limits width for better layout */
+        padding: 1rem;
+        width: 1200%;
+        max-width: 400px;
     }
 
     .timeline p {
