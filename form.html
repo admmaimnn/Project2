@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Charity & Fundraising - Registration Form</title>
+</head>
+<body>
+    <nav>
+        <img src="images/logo.png">
+        
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+    
+        <ul class="nav-links" id="nav-links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="about.html">About Us</a></li>
+            <li class="link"><a href="campaigns.html">Campaigns</a></li>
+            <li class="link"><a href="get-involved.html">Get Involved</a></li>
+            <li class="link"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="register">
+        <div class="container">
+            <h2>Join Us</h2>
+            <p>Fill out the form below to get involved in our mission.</p>
+            <form id="joinForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name">
+                <div id="nameError" class="error"></div>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+                <div id="emailError" class="error"></div>
+            
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone">
+                <div id="phoneError" class="error"></div>
+            
+                <label for="involment">How you would like to get involved?</label>
+                <select id="involment">
+                    <option value="">Select an option</option>
+                    <option value="volunteer">Volunteer</option>
+                    <option value="partner">Partner with Us</option>
+                </select>
+                <div id="involmentError" class="error"></div>
+            
+                <button class="button" type="submit">Submit</button>
+            </form>
+            
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer">
+            <ul class="nav-sosial">
+                <li class="sosial"><i class="ri-instagram-fill"></i></li>
+                <li class="sosial"><i class="ri-twitter-x-line"></i></li>
+                <li class="sosial"><i class="ri-youtube-fill"></i></li>
+            </ul>
+            <h5>Charity & Fundraising &copy 2025</h5>
+        </div>
+    </footer>
+    
+    <script src="validation.js"></script>
+    <script src="toggle.js"></script>
+</body>
+</html>

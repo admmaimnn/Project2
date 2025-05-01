@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    padding-top: 130px;
+    overflow-x: hidden; /* Prevent horizontal scroll on mobile */
+}
+
+a {
+    text-decoration: none;
+}
+
+nav img {
+    width: 20%;
+}
+
+nav {
+    background-color: white;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-links {
+    margin-right: 100px;
+    list-style: none;
+    gap: 3rem;
+}
+
+@media (min-width: 769px) {
+    .nav-links {
+        display: flex;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.nav-links a {
+    color: black;
+    transition: all 0.3s ease;
+    font-weight: 300;
+}
+
+.nav-links a:hover {
+    color: #723fa3;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-right: 50px;
+    color: white;
+    background-color: #ed117f;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ed117fbc;
+}
+
+.container-main {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #723fa3;
+}
+
+header .content {
+    justify-self: center;
+}
+
+header .content h4 {
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 4rem;
+}
+
+header .content p {
+    margin-bottom: 2rem;
+    color: white;
+}
+
+header .image-main img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+section .header {
+    margin-top: 3rem;
+    color: #723fa3;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.features, .features-about {
+    max-width: 1200px;
+    margin-top: 2rem;
+    justify-self: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.features .card {
+    background-color: #723fa3;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.features .card span {
+    display: inline-block;
+    background-color: #ed117f;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.features .card h4 {
+    margin-bottom: 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.features .card p {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: whitesmoke;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-sosial {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 1.75rem;
+    color: grey;
+}
+
+.footer h5 {
+    margin-top: 1rem;
+    color: grey;
+}
+
+.image-about img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.container-about .history {
+    padding: 1rem 4rem;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    top: -90px;
+    max-width: 1400px;
+    justify-self: center;
+}
+
+.history p {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.history span {
+    color: #723fa3;
+}
+
+.timeline {
+    margin-top: -4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.timeline p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.fade {
+    animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+
+.features-about .card {
+    text-align: center;
+}
+
+.features-about h4 {
+    margin-top: 5rem;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.features-about p {
+    font-size: 1.10rem;
+    font-weight: 300;
+}
+
+.features-about li {
+    font-size: 1.10rem;
+    font-weight: 300;
+    list-style: none;
+}
+
+.container-campaigns .campaigns {
+    padding: 1rem 2rem;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    top: -90px;
+    max-width: 1400px;
+    justify-self: left;
+    margin-left: 3rem;
+}
+
+.campaigns p {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.features-campaigns {
+    margin: 3rem;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.activities {
+    padding: 1rem;
+    margin: 4rem;
+}
+
+.text {
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+    color: #723fa3;
+    text-align: center;
+}
+
+.features-campaigns p {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+}
+
+.features-campaigns .card {
+    border-radius: 10px;
+    padding: 30px;
+    background-color: white;
+}
+
+.features-campaigns img {
+    margin-top: 0.75rem;
+    height: 70%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.features-involved {
+    margin-top: -1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.features-involved .card,
+.features-involved .cardd {
+    position: relative;
+    overflow: hidden;
+}
+
+.features-involved img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.options .get-involved {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 1rem;
+}
+
+.get-involved p {
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.get-involved h3 {
+    color: white;
+    margin-bottom: 1.7rem;
+}
+
+.register {
+    padding: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.register .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #723fa3;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.register p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.register label {
+    margin-bottom: -1rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.register input, select, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: -1.5rem;
+}
+
+.register button {
+    background-color: #ed117f;
+    margin-top: 1rem;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.register button:hover {
+    background-color: #d10d6f;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    text-align: left;
+    display: block;
+    width: 100%;
+}
+
+.container-customer img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* ---------------------------------
+   RESPONSIVE STYLES (MOBILE)
+---------------------------------- */
+@media (max-width: 768px) {
+    body {
+        padding-top: 100px;
+    }
+
+    nav img {
+        width: 40%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 15px 0;
+    }
+
+    .container-main {
+        margin-top: -0.9rem;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    header .content {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    header .image-main {
+        display: none;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+        margin-right: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .get-involved p {
+        font-size: 1.3rem;
+    }
+
+    .get-involved h3 {
+        font-size: 0.6rem;
+    }
+
+    .register .container {
+        padding: 1.2rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .register form {
+        gap: 1.2rem;
+    }
+
+    .register {
+        padding: 2rem 1rem;
+    }
+
+    .register h2 {
+        font-size: 1.2rem;
+    }
+
+    .register p {
+        font-size: 0.85rem;
+    }
+
+    .register label {
+        font-size: 0.85rem;
+    }
+
+    .register input,
+    .register select,
+    .register textarea {
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+
+    .register button {
+        padding: 0.6rem;
+        font-size: 0.85rem;
+    }
+
+    .error {
+        font-size: 0.75rem;
+    }
+
+    .nav-sosial {
+        font-size: 1.2rem;
+        gap: 1.2rem;
+    }
+
+    .campaigns p {
+        font-size:2rem;
+        font-weight: 800;
+        margin-bottom: 3rem;
+    }
+
+    .features-campaigns .card {
+        border-radius: 10px;
+        padding: 30px;
+        background-color: white;
+    }
+
+    .container-campaigns .campaigns {
+        padding: 0 1rem;
+        background-color: white;
+        border-radius: 5px;
+        position: relative;
+        margin: 0 auto;
+        top: -35px;
+        width: 70%;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    
+
+    .features-campaigns {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* ✅ center content horizontally */
+        gap: 2rem;
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+    
+
+    .features-campaigns .card {
+        width: 100%;
+        max-width: 400px; /* ✅ this limits width for better layout */
+    }
+
+    .timeline p {
+        font-size: 1rem;
+    }
+
+    .features-about h4 {
+        font-size: 2rem;
+    }
+
+    .features-about p,
+    .features-about li {
+        font-size: 0.95rem;
+    }
+
+    header .image-main {
+        margin-top: 1rem;
+    }
+
+    .nav-sosial {
+        margin-left: 3rem;
+    }
+}
