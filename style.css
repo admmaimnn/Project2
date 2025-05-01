@@ -508,9 +508,7 @@ h2 {
     object-fit: cover;
 }
 
-/* ---------------------------------
-   RESPONSIVE STYLES (MOBILE)
----------------------------------- */
+
 @media (max-width: 768px) {
     body {
         padding-top: 100px;
@@ -669,6 +667,7 @@ h2 {
         font-weight: 800;
         margin-bottom: 3rem;
     }
+    
 
     .features-campaigns .card {
         border-radius: 10px;
@@ -697,7 +696,7 @@ h2 {
     }
 
     .features-campaigns .card {
-        width: 120%;
+        width: 150%;
     }
 
     .timeline p {
