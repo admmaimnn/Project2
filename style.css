@@ -582,6 +582,28 @@ h2 {
         font-size: 0.9rem;
     }
 
+    .container-about .history {
+        padding: 1rem 4rem;
+        background-color: white;
+        border-radius: 5px;
+        position: relative;
+        top: -10px;
+        max-width: 1400px;
+        justify-self: center;
+    }
+    
+    .history p {
+        font-size: 3rem;
+        font-weight: 800;
+    }
+
+    .timeline {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+
     .get-involved p {
         font-size: 1.3rem;
     }
